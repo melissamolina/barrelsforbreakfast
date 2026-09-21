@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barrels for Breakfast</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="logo-approved.png" alt="Barrels for Breakfast">
+  <a href="#design">DESIGN YOUR BAG</a>
+</header>
+
+<main>
+<section class="hero">
+  <img src="gallery-wave-bag.png" alt="Barrels for Breakfast surfboard bag">
+  <div class="hero-copy">
+    <h1>SURFBOARD BAGS.<br>BUILT DIFFERENT.</h1>
+    <a class="button" href="#design">DESIGN YOUR BAG →</a>
+  </div>
+</section>
+
+<section id="design" class="configurator">
+  <div class="config-head">
+    <span>BARRELS FOR BREAKFAST</span>
+    <h2>DESIGN YOUR BAG</h2>
+  </div>
+
+  <div class="config-grid">
+    <div class="preview-column">
+      <div class="preview-stage">
+        <div id="bagPreview" class="bag-preview-svg-wrap front-view">
+          <button id="rotateBag" class="rotate-bag" type="button">ROTATE BAG</button>
+          <svg id="bagSvg" viewBox="0 0 420 980" aria-label="Live surfboard bag preview" role="img">
+            <defs>
+              <filter id="glow" x="-30%" y="-10%" width="160%" height="130%">
+                <feGaussianBlur stdDeviation="28" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+              <clipPath id="bagBodyClip">
+                <path d="M210 70 C255 70 312 84 348 142 C367 174 371 224 371 300 L371 706 C371 779 363 827 344 862 C309 926 258 942 210 942 C162 942 111 926 76 862 C57 827 49 779 49 706 L49 300 C49 224 53 174 72 142 C108 84 165 70 210 70 Z"/>
+              </clipPath>
+            </defs>
+
+            <ellipse class="bag-glow" cx="210" cy="500" rx="165" ry="420" />
+
+            <g class="bag-shell" filter="url(#glow)">
+              <path class="bag-outer" d="M210 55 C261 55 326 72 366 136 C388 171 392 225 392 305 L392 704 C392 785 384 835 363 874 C324 947 266 965 210 965 C154 965 96 947 57 874 C36 835 28 785 28 704 L28 305 C28 225 32 171 54 136 C94 72 159 55 210 55 Z"/>
+              <path class="bag-body-stroke" d="M210 70 C255 70 312 84 348 142 C367 174 371 224 371 300 L371 706 C371 779 363 827 344 862 C309 926 258 942 210 942 C162 942 111 926 76 862 C57 827 49 779 49 706 L49 300 C49 224 53 174 72 142 C108 84 165 70 210 70 Z"/>
+              <image id="bagDesignImage" href="design-tropical-hibiscus.jpg" x="49" y="70" width="322" height="872" preserveAspectRatio="xMidYMid slice" clip-path="url(#bagBodyClip)"/>
+              <path class="bag-seam" d="M210 84 L210 926"/>
+              <path class="tip-panel top" d="M108 74 L312 74 C335 74 352 91 356 111 C358 126 355 142 347 156 C322 200 297 225 210 230 C123 225 98 200 73 156 C65 142 62 126 64 111 C68 91 85 74 108 74 Z"/>
+              <path class="tip-panel bottom" d="M88 848 C118 819 147 809 210 806 C273 809 302 819 332 848 C344 859 354 875 357 892 C361 916 348 938 326 944 L94 944 C72 938 59 916 63 892 C66 875 76 859 88 848 Z"/>
+              <path class="back-pocket" d="M194 168 L226 168 L226 394 L194 394 Z"/>
+              <g id="frontStrapGroup" class="front-strap-group">
+                <path class="strap-main" d="M84 230 C46 310 34 386 39 446 C43 498 58 557 88 635"/>
+                <path class="strap-main thin" d="M95 214 C57 293 45 371 49 432 C53 487 68 551 98 622"/>
+                <g class="strap-pad" transform="translate(18 332)">
+                  <rect x="0" y="0" rx="20" ry="20" width="76" height="150"/>
+                  <image href="logo-approved.png" x="11" y="14" width="54" height="98" preserveAspectRatio="xMidYMid meet" transform="rotate(-90 38 63)"/>
+                  <rect class="flag-red" x="12" y="106" width="52" height="12" rx="2"/>
+                  <rect class="flag-white" x="12" y="118" width="52" height="12" rx="2"/>
+                  <rect class="flag-blue" x="12" y="130" width="52" height="12" rx="2"/>
+                </g>
+                <g class="buckles">
+                  <rect x="63" y="287" width="22" height="24" rx="4"/>
+                  <rect x="72" y="497" width="22" height="24" rx="4"/>
+                  <rect x="83" y="669" width="22" height="24" rx="4"/>
+                  <rect x="331" y="420" width="22" height="24" rx="4"/>
+                  <rect x="338" y="610" width="22" height="24" rx="4"/>
+                </g>
+              </g>
+              <g id="logoFrontGroup" class="logo-front-group">
+                <image href="logo-approved.png" x="132" y="334" width="156" height="266" preserveAspectRatio="xMidYMid meet" transform="rotate(90 210 467)"/>
+              </g>
+              <g id="logoBackGroup" class="logo-back-group">
+                <image href="logo-approved.png" x="138" y="334" width="144" height="82" preserveAspectRatio="xMidYMid meet"/>
+              </g>
+              <g id="iconFrontGroup" class="icon-front-group accent-fill" transform="translate(210 894)">
+                <g transform="skewX(-24) translate(-22 0)">
+                  <rect x="-26" y="-20" width="22" height="52" rx="3"/>
+                  <rect x="4" y="-20" width="22" height="52" rx="3"/>
+                </g>
+              </g>
+              <g id="iconBackGroup" class="icon-back-group accent-fill" transform="translate(210 894)">
+                <g transform="skewX(-24) translate(-22 0)">
+                  <rect x="-26" y="-20" width="22" height="52" rx="3"/>
+                  <rect x="4" y="-20" width="22" height="52" rx="3"/>
+                </g>
+              </g>
+              <g class="accent-fill detail-hardware">
+                <rect x="205" y="53" width="10" height="24" rx="4"/>
+                <rect x="205" y="944" width="10" height="24" rx="4"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="preview-note">LIVE BAG PREVIEW</div>
+      <div class="feature-row">
+        <span>ECO-FRIENDLY<br>MATERIALS</span>
+        <span>AIRPLANE TESTED<br>GLOBALLY</span>
+        <span>FOR CONSCIOUS<br>SURFERS</span>
+        <span>COSTA RICA<br>PURA VIDA</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <label>BOARD TYPE
+        <select id="boardType">
+          <option>Shortboard</option>
+          <option>Longboard</option>
+          <option>Fish</option>
+          <option>Funboard / Midlength</option>
+        </select>
+      </label>
+
+      <label>SIZE
+        <select id="boardSize">
+          <option>5'6"</option><option>5'8"</option><option selected>6'0"</option>
+          <option>6'2"</option><option>6'6"</option><option>7'0"</option>
+          <option>8'0"</option><option>9'0"</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>MATERIAL</legend>
+        <div class="choice-grid material-choices">
+          <button type="button" class="choice active" data-material="waterproof"><b class="swatch waterproof"></b><span>WATERPROOF<small>Built for travel.</small></span></button>
+          <button type="button" class="choice" data-material="coffee"><b class="swatch coffee"></b><span>COFFEE BAGS<small>Sustainable.</small></span></button>
+          <button type="button" class="choice" data-material="banner"><b class="swatch banner"></b><span>RECLAIMED BANNER<small>Durable.</small></span></button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>COLOR</legend>
+        <div class="color-row">
+          <button type="button" class="color-dot active" data-color="white" aria-label="White"></button>
+          <button type="button" class="color-dot lime" data-color="lime" aria-label="Lime"></button>
+          <button type="button" class="color-dot pink" data-color="pink" aria-label="Pink"></button>
+          <button type="button" class="color-dot aqua" data-color="aqua" aria-label="Aqua"></button>
+          <button type="button" class="color-dot black" data-color="black" aria-label="Black"></button>
+          <button type="button" class="color-dot sand" data-color="sand" aria-label="Sand"></button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>DETAIL COLOR</legend>
+        <div class="detail-color-row">
+          <button type="button" class="detail-swatch active" data-detail="#25d8f0" style="--swatch:#25d8f0" aria-label="Aqua"></button>
+          <button type="button" class="detail-swatch" data-detail="#d9ff2e" style="--swatch:#d9ff2e" aria-label="Lime"></button>
+          <button type="button" class="detail-swatch" data-detail="#ff4ca0" style="--swatch:#ff4ca0" aria-label="Pink"></button>
+          <button type="button" class="detail-swatch" data-detail="#ffffff" style="--swatch:#ffffff" aria-label="White"></button>
+          <button type="button" class="detail-swatch" data-detail="#c9b287" style="--swatch:#c9b287" aria-label="Sand"></button>
+          <label class="custom-color-label">CUSTOM
+            <input id="customDetailColor" type="color" value="#25d8f0" aria-label="Choose custom detail color">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>ADD DESIGN (OPTIONAL)</legend>
+        <div class="design-options">
+          <button type="button" class="design-thumb active" data-design="Tropical Hibiscus" data-image="design-tropical-hibiscus.jpg">
+            <img src="design-tropical-hibiscus.jpg" alt="Tropical Hibiscus"><span>TROPICAL<br>HIBISCUS</span>
+          </button>
+          <button type="button" class="design-thumb" data-design="Palm Natural" data-image="design-palm-natural.jpg">
+            <img src="design-palm-natural.jpg" alt="Palm Natural"><span>PALM<br>NATURAL</span>
+          </button>
+          <button type="button" class="design-thumb" data-design="Wave" data-image="design-wave.jpg">
+            <img src="design-wave.jpg" alt="Wave"><span>WAVE</span>
+          </button>
+          <button type="button" class="design-thumb" data-design="Black Topography" data-image="design-black-topography.jpg">
+            <img src="design-black-topography.jpg" alt="Black Topography"><span>BLACK<br>TOPOGRAPHY</span>
+          </button>
+          <button type="button" class="design-thumb" data-design="Café de Costa Rica" data-image="design-cafe-costa-rica.jpg">
+            <img src="design-cafe-costa-rica.jpg" alt="Café de Costa Rica"><span>CAFÉ DE<br>COSTA RICA</span>
+          </button>
+        </div>
+        <label class="upload">UPLOAD YOUR IMAGE
+          <input id="artworkUpload" type="file" name="design-upload" form="nextBatchForm" accept="image/png,image/jpeg">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>VIEW</legend>
+        <div class="placement-row">
+          <button type="button" class="placement active" data-view="front">FRONT</button>
+          <button type="button" class="placement" data-view="back">BACK</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>LOGO STYLE</legend>
+        <div class="placement-row logo-style-row">
+          <button type="button" class="placement active" data-logo-style="front-logo">FRONT LOGO</button>
+          <button type="button" class="placement" data-logo-style="back-logo">BACK LOGO</button>
+          <button type="button" class="placement" data-logo-style="icon-only">ICON ONLY</button>
+        </div>
+      </fieldset>
+
+      <button id="generateDesign" class="button generate" type="button">GENERATE DESIGN →</button>
+      <p id="generatedMessage" class="generated-message" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<section class="save">
+<form id="nextBatchForm" name="next-batch" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+  <input type="hidden" name="form-name" value="next-batch">
+  <input type="hidden" name="board-type" id="formBoardType">
+  <input type="hidden" name="board-size" id="formBoardSize">
+  <input type="hidden" name="material" id="formMaterial">
+  <input type="hidden" name="color" id="formColor">
+  <input type="hidden" name="detail-color" id="formDetailColor">
+  <input type="hidden" name="pattern" id="formPattern">
+  <input type="hidden" name="bag-view" id="formBagView">
+  <input type="hidden" name="logo-style" id="formLogoStyle">
+  <p class="hidden"><label>Leave empty <input name="bot-field"></label></p>
+  <h2>SAVE YOUR DESIGN</h2>
+  <p class="save-intro">Join the next production batch in Costa Rica.</p>
+  <div class="fields">
+    <label>NAME<input name="name" required></label>
+    <label>EMAIL<input type="email" name="email" required></label>
+    <label>COUNTRY<input name="country"></label>
+    <div class="upload-confirmation">YOUR UPLOADED IMAGE FROM THE DESIGN CENTER WILL BE INCLUDED WITH THIS SUBMISSION.</div>
+  </div>
+  <button class="button" type="submit">SAVE DESIGN · JOIN THE NEXT BATCH</button>
+  <p class="small">No payment will be taken.</p>
+</form>
+</section>
+
+<section class="history">
+<img src="history-bags.png" alt="Barrels for Breakfast surfboard bags">
+<div>
+<span>THE HISTORY</span>
+<h2>Playa Garza, Costa Rica.</h2>
+<p>Barrels for Breakfast started about 17 years ago in a little cabin by the ocean in Playa Garza, Costa Rica.</p>
+<p>I needed a surfboard bag and didn’t want another generic one. So I started making my own by hand, using what was around me — Costa Rican coffee sacks, old banners, leftover fabrics and materials that could be given another life.</p>
+<p>Soon, surfers began bringing their boards to the cabin. I measured each board and built each bag around the surfer and how they traveled — from riding a bike to the beach to flying across the world.</p>
+<p>That idea still guides Barrels for Breakfast today: <strong>create better surf gear, waste less, and give back to the ocean.</strong></p>
+<p><strong>Pura Vida.</strong> 🌊🇨🇷</p>
+</div>
+</section>
+
+<section class="gallery">
+<img class="wide" src="gallery-lifestyle-bags.jpg" alt="Barrels for Breakfast lifestyle">
+<div class="pair"><div class="crop fins"></div><div class="crop leash"></div></div>
+<img class="hat" src="gallery-hat.jpg" alt="Barrels for Breakfast hat">
+</section>
+</main>
+<footer><img src="footer-wave.jpg" alt="Barrels for Breakfast Costa Rica"></footer>
+<script src="script.js"></script>
+</body>
+</html>
